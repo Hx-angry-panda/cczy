@@ -1,0 +1,134 @@
+html{font-size: 1rem;}
+body{margin: 0;}
+p{margin: 0;}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    max-width: 10rem;
+    padding: 0.35rem 1rem;
+}
+header svg{
+    margin-right: 1rem;
+}
+
+/* 
+    main 
+*/
+.title{
+    margin: 1rem 1rem 0 1rem;
+    color: #1a2a3a;
+}
+.title h3{
+    font-weight: bold;
+    margin: 0 0 0.3rem 0;
+}
+.title .sort{
+    margin: 0.3rem 0;
+}
+.title .sort span{
+    color: white;
+    background: #3498DB;
+    padding: 0.1rem 0.2rem;
+    border-radius: .3rem;
+}
+.message{
+    font-size: 1rem;
+}
+.message .container{
+    margin: 0;
+    padding: 0;
+}
+.message .row{
+    margin: .5rem 0;
+}
+.message .averagePrice{
+    color: inherit;
+}
+.message .priceNum{
+    font-size: 1.2rem;
+    color: #f75848;
+}
+.message .priceUnit{
+    color: #f75848;
+}
+.message b{
+    color: #9c9fa1;
+    font-size: 1rem;
+    font-weight: normal;
+}
+.message .address{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.message .address::after{
+    content: '';
+    position: absolute;
+    width: 1rem;
+    height: 1rem;
+    right: 0;
+    top: .25rem;
+    background: url(./images/right.svg) no-repeat;
+    background-size: 100% 100%;
+}
+
+.details h4{
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.details img{
+    width: 100%;
+}
+.map{
+    margin-bottom: 2rem;
+}
+.map h4{
+    margin-left: 1rem;
+    font-weight: bold;
+}
+.map img{
+    width: 100%;
+    padding: 0 1rem;
+}
+
+/* 
+footer 
+*/
+.contact{
+    background: white;
+    display: flex;
+    align-items: center;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+    padding: 0.8rem 0.8rem 0.9rem 0.8rem;
+    display: flex;
+    justify-content: space-between;
+}
+.contact .sharePerson img{
+    width: 2rem;
+    height: 2rem;
+    border: 1px solid #3498DB;
+}
+.contact button{
+    background: #3498DB;
+    border: 1px solid #3498DB;
+    outline: none;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.6rem;
+}
+.contact button:nth-child(1){
+    background: white;
+    color: #3498DB;
+    margin-right: 0.5rem;
+}
+.contact button:nth-child(2){
+    background: #3bc48b;
+    color: white;
+    border: 1px solid #3bc48b;
+    margin-right: 0.5rem;
+}
