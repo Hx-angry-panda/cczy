@@ -10,7 +10,8 @@ header img{
     max-width: 10rem;
     padding: 0.35rem 1rem;
 }
-header svg{
+header a{
+    height: 30px;
     margin-right: 1rem;
 }
 
@@ -113,7 +114,7 @@ footer
     height: 2rem;
     border: 1px solid #3498DB;
 }
-.contact button{
+.contact .share,.call,.book{
     background: #3498DB;
     border: 1px solid #3498DB;
     outline: none;
@@ -121,14 +122,14 @@ footer
     border-radius: 0.3rem;
     padding: 0.3rem 0.6rem;
 }
-.contact button:nth-child(1){
+.contact .share{
     background: white;
     color: #3498DB;
     margin-right: 0.5rem;
 }
-.contact button:nth-child(2){
+.contact .call{
     background: #3bc48b;
     color: white;
-    border: 1px solid #3bc48b;
+    border-color: #3bc48b;
     margin-right: 0.5rem;
 }

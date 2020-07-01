@@ -1,0 +1,46 @@
+html{font-size: 1rem;}
+body{margin: 0;}
+p{margin: 0;}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+header img{
+    max-width: 10rem;
+    padding: 0.35rem 1rem;
+}
+header a{
+    height: 30px;
+    margin-right: 1rem;
+}
+main{
+    margin: 0 1rem;
+}
+main h3{
+    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+main form{
+    text-align: right;
+}
+main form .form-group{
+    display: flex;
+    align-items: center;
+}
+main form label{
+    white-space: nowrap;
+    margin-right: 1rem;
+    width: 5rem;
+    text-align: right;
+}
+main .submitBtn{
+    background: #3498DB;
+    border: 1px solid #3498DB;
+    outline: none;
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.3rem 0.8rem;
+    color: white;
+}
