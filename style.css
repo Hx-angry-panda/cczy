@@ -1,6 +1,9 @@
 html{font-size: 1rem;}
 body{margin: 0;}
 p{margin: 0;}
+a:hover,a:focus{
+    text-decoration: none;
+}
 header{
     display: flex;
     align-items: center;
