@@ -14,10 +14,6 @@ header img{
     max-width: 10rem;
     padding: 0.35rem 1rem;
 }
-header a:nth-child(2){
-    height: 30px;
-    margin-right: 1rem;
-}
 
 main{
     margin: 0 1rem;
