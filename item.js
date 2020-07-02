@@ -17,5 +17,5 @@ function change(){
         return false;
     }    
     var direction = range < 0 ?'next':'prev';
-    $("#carousel-example-generic").carousel(direction);
+    $("#carousel1").carousel(direction);
 }

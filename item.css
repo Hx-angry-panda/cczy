@@ -80,6 +80,36 @@ header a:nth-child(2){
     background-size: 100% 100%;
 }
 
+
+.sales{
+    margin: 1rem 1rem 0 1rem;
+    
+}
+.sales h4{
+    font-weight: bold;
+}
+.sales .salesList{
+    height: 18em;
+    overflow: scroll;
+}
+.sales .salesItem{
+    height: 6em;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+.sales .salesName{
+    font-weight: bold;
+    font-size: 1rem;
+}
+.sales .salesMotto{
+    width: 15em;
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+
 .details h4{
     margin-left: 1rem;
     font-weight: bold;
