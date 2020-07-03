@@ -1,21 +1,31 @@
-var flagX = 0;
-var flagXM = 0;
+//轮播
+var mySwiper = new Swiper('.swiper-container', {
+    direction: 'horizontal', // 水平切换选项
+    loop: true, // 循环模式选项
+    speed: 1000,
+    autoplay: {
+        delay: 3000
+    },
+})
 
-function getFlag(){
-    flagX = event.touches[0].pageX;
-    flagXM = flagX;
-}
+//预约看房
+var build_name = $('.title h3')[0].innerHTML
+var urlParameter = encodeURI(encodeURI(build_name))
+$('.book').click(function(){
+    window.location.href = encodeURI(`book_btn.html?build=${encodeURIComponent(build_name)}`)
+})
 
-function setFlag(){
-    flagXM = event.touches[0].pageX;
-}
-
-function change(){
-    var range = flagXM - flagX;
-    //如果水平滑动距离小于30，就不切换
-    if(Math.abs(range) < 30){
-        return false;
-    }    
-    var direction = range < 0 ?'next':'prev';
-    $("#carousel1").carousel(direction);
-}
+//地图
+$('.address').click(function(){
+    $.ajax({
+        type: 'post',
+        dataType: 'JSONP',
+        url: 'http://api.map.baidu.com/geocoder',
+        address: $('.title h3')[0].innerHTML,
+        output: 'html',
+        src: 'webapp.companyName.appName',
+    }).then(
+        window.location.href = `http://api.map.baidu.com/geocoder?address=${$('.title h3')[0].innerHTML}&output=html&src=webapp.baidu.openAPIdemo`,
+        (request)=>{console.log(request)}                   //reject
+      )
+})
