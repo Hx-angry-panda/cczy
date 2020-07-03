@@ -165,11 +165,6 @@ header img{
     display: flex;
     flex-direction: column;
 }
-
-
-.map{
-    margin-bottom: 2rem;
-}
 .map h4{
     margin-left: 1rem;
     font-weight: bold;
