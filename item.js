@@ -17,15 +17,5 @@ $('.book').click(function(){
 
 //地图
 $('.address').click(function(){
-    $.ajax({
-        type: 'post',
-        dataType: 'JSONP',
-        url: 'http://api.map.baidu.com/geocoder',
-        address: $('.title h3')[0].innerHTML,
-        output: 'html',
-        src: 'webapp.companyName.appName',
-    }).then(
-        window.location.href = `http://api.map.baidu.com/geocoder?address=${$('.title h3')[0].innerHTML}&output=html&src=webapp.baidu.openAPIdemo`,
-        (request)=>{console.log(request)}                   //reject
-      )
+    window.location.href = `http://api.map.baidu.com/geocoder?address=${$('.title h3')[0].innerHTML}&output=html&src=webapp.baidu.openAPIdemo`
 })
